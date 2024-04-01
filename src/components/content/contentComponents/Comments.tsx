@@ -1,12 +1,17 @@
 import React from 'react';
 import styled from "styled-components";
 
-export const Comments = () => {
+type CommentsPropsType = {
+    text: string
+    count: number
+}
+
+export const Comments = ({text, count}: CommentsPropsType) => {
     return (
         <Comment>
             <img src="https://pixlr.com/images/index/ai-image-generator-two.webp" alt=""/>
-            <p>Text</p>
-            <button>like</button>
+            <p>{text}</p>
+            <button>like{count}</button>
         </Comment>
     );
 };

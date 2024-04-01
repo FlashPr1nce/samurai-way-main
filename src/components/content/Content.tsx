@@ -11,11 +11,8 @@ const Content = () => {
             <ContentWrapper>
             <AboutProfile />
             <FormText />
-            <Comments />
-            <Comments />
-            <Comments />
-            <Comments />
-            <Comments />
+            <Comments text={'Hi everyone!'} count={7}/>
+            <Comments text={'It is my first comment'} count={13}/>
             </ContentWrapper>
         </WholeContent>
     );
